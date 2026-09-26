@@ -4,145 +4,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PawRescue - Help Street Animals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="immediate">
-        <div class="action">
-            <p>Immediate Action Needed</p>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./Link (1).png" alt="PawRescue logo">
+            </a>
+
+            <nav class="navitems">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Animals</a>
+            </nav>
         </div>
 
-        <div class="animalshelp">
+        <div class="header-right">
+            <button class="report-btn">Report Animal</button>
+            <img src="./Background.svg" alt="Profile" class="profile-avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="content">
+                        <h1 class="title">Help Street Animals <span class="title-highlight">Find a Better Life.</span></h1>
+                        <p class="description">Found an animal that needs help? Report it and connect with people who care. Every report connects compassionate neighbors, volunteers, and local clinics.</p>
+                    </div>
+
+                    <div class="btns">
+                        <button class="btn1"><img src="Icon.svg" alt="">Report an Animal</button>
+                        <button class="btn2"><img src="Container.svg" alt="">Explore Animals</button>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">142</span>
+                            <p class="desc">Animals Helped this month</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="response-time">18 min</span>
+                            <p class="desc">Average community response</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="location">Tbilisi</span>
+                            <p class="desc">Active neighborhood hub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <img src="stray.jpg" alt="Stray animal needing rescue">
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="hiw-header">
+                <div class="process">
+                    <span>simple process</span>
+                </div>
+                <h2>How It Works</h2>
+                <p class="subtitle">Three simple steps to save a life</p>
+            </div>
+
+            <div class="hiwc">
+                <div class="hcard">
+                    <div class="numb">1</div>
+                    <div class="hcardtext">
+                        <h3>Find an animal that needs help.</h3>
+                        <p>Spot a dog or cat on the street needing urgent treatment, temporary shelter, or food. Keep a safe distance and snap a quick photo.</p>
+                    </div>
+                </div>
+                <div class="hcard">
+                    <div class="numb">2</div>
+                    <div class="hcardtext">
+                        <h3>Report its location and condition.</h3>
+                        <p>Submit a fast 30-second report with the neighborhood spot and urgency tag so nearby rescuers receive immediate notifications.</p>
+                    </div>
+                </div>
+                <div class="hcard">
+                    <div class="numb">3</div>
+                    <div class="hcardtext">
+                        <h3>Connect with someone who can help.</h3>
+                        <p>Community members, drivers, and local foster volunteers step in directly through one-click contact details to resolve the rescue.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rescue-banner">
+                <div class="resctext">
+                    <h2>Ready to make a difference right now?</h2>
+                    <p>Every rescued animal begins with one mindful neighbor. Report a stray or volunteer your assistance today.</p>
+                </div>
+                <button><img src="./Container.svg" alt="">Report an Animal</button>
+            </div>
+        </section>
+
+        <section class="animalshelp">
             <h2>Animals That Need Your Help</h2>
-            <p>Browse reports of stray animals nearby who need medical attention, food, or shelter. Click below to
-                view location details and connect directly with the reporter.</p>
+            <p>Browse reports of stray animals nearby who need medical attention, food, or shelter. Click below to view location details and connect directly with the reporter.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="top">
+                        <img src="./dogoti.svg" alt="dog">
+                        <div class="align">
+                            <div class="animal">
+                                <p>Dog</p>
+                            </div>
+                            <div class="needshelp">
+                                <div></div>
+                                <p>Needs Help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="location">
+                            <img src="./Container.svg" alt="location">
+                            <p>Saburtalo, Tbilisi</p>
+                        </div>
+
+                        <div class="details">
+                            <p>Injured Dog</p>
+                        </div>
+
+                        <p class="description">A friendly dog with an injured leg needs medical attention.</p>
+
+                        <div class="buttonwidth">
+                            <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="./kitty.svg" alt="cat">
+                        <div class="align">
+                            <div class="animal">
+                                <p>cat</p>
+                            </div>
+                            <div class="needshelp">
+                                <div></div>
+                                <p>Needs Help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="location">
+                            <img src="./Container.svg" alt="location">
+                            <p>Dighomi, Tbilisi</p>
+                        </div>
+
+                        <div class="details">
+                            <p>Hungry Cat</p>
+                        </div>
+
+                        <p class="description">A small kitten looking for food and temporary shelter.</p>
+
+                        <div class="buttonwidth">
+                            <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="./seconddog.svg" alt="dog">
+                        <div class="align">
+                            <div class="animal">
+                                <p>Dog</p>
+                            </div>
+                            <div class="needshelp">
+                                <div></div>
+                                <p>Needs Help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <div class="location">
+                            <img src="./Container.svg" alt="location">
+                            <p>Vake, Tbilisi</p>
+                        </div>
+
+                        <div class="details">
+                            <p>Abandoned Dog</p>
+                        </div>
+
+                        <p class="description">A young puppy found alone near a busy street.</p>
+
+                        <div class="buttonwidth">
+                            <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>PawRescue</h2>
+                <p class="lastp">© 2024 PawRescue. Dedicated to community care & welfare</p>
+            </div>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#" class="footer-link active">Home</a></li>
+                    <li><a href="#" class="footer-link">Animals</a></li>
+                    <li><a href="#" class="footer-link">Report an Animal</a></li>
+                    <li><a href="#" class="footer-link">Hackathon Project</a></li>
+                </ul>
+            </nav>
         </div>
+    </footer>
+</body>
 
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <div class="top">
-                <img src="./dogoti.svg" alt="dog">
-
-                <div class="align">
-
-
-                    <div class="animal">
-                        <p>Dog</p>
-                    </div>
-
-
-                    <div class="needshelp">
-                        <div></div>
-                        <p>Needs Help</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bottom">
-                <div class="location">
-                    <img src="./Container.svg" alt="location">
-                    <p>Saburtalo, Tbilisi</p>
-                </div>
-
-                <div class="details">
-                    <p>Injured Dog</p>
-                </div>
-
-                <p class="description">A friendly dog with an injured leg needs medical
-                    attention.</p>
-
-                <div class="buttonwidth">
-                    <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top">
-                <img src="./kitty.svg" alt="cat">
-
-                <div class="align">
-
-
-                    <div class="animal">
-                        <p>cat</p>
-                    </div>
-
-
-                    <div class="needshelp">
-                        <div></div>
-                        <p>Needs Help</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bottom">
-                <div class="location">
-                    <img src="./Container.svg" alt="location">
-                    <p>Dighomi, Tbilisi</p>
-                </div>
-
-                <div class="details">
-                    <p>Hungry Cat</p>
-                </div>
-
-                <p class="description">
-                    A small kitten looking for food and temporary
-                    shelter.</p>
-
-                <div class="buttonwidth">
-                    <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="top">
-                <img src="./seconddog.svg" alt="dog">
-
-                <div class="align">
-
-
-                    <div class="animal">
-                        <p>Dog</p>
-                    </div>
-
-
-                    <div class="needshelp">
-                        <div></div>
-                        <p>Needs Help</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="bottom">
-                <div class="location">
-                    <img src="./Container.svg" alt="location">
-                    <p>Vake, Tbilisi</p>
-                </div>
-
-                <div class="details">
-                    <p>Abandoned Dog</p>
-                </div>
-
-                <p class="description">
-                    A young puppy found alone near a busy street.</p>
-
-                <div class="buttonwidth">
-                    <button class="wanttohelp"><img src="./Container (1).svg" alt="">I want to help</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+</html>
 </body>
 
 </html>
