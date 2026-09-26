@@ -3,10 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-    box-sizing: border-box;
-}
 
-body {
 body {
     font-family: 'Inter', sans-serif;
     color: #3D4945;
@@ -27,6 +24,12 @@ body {
     display: flex;
     align-items: center;
     gap: 48px;
+}
+
+.logo img {
+    display: block;
+    width: 120px;
+    height: auto;
 }
 
 .navitems {
@@ -323,10 +326,173 @@ body {
     white-space: nowrap;
 }
 
+/* Animals Help Section */
+.animalshelp {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.animalshelp h2 {
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 32px;
+    color: #121C2A;
+}
+
+.animalshelp p {
+    max-width: 672px;
+    margin-top: 12px;
+    color: #3D4945;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cards {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+    position: relative;
+    width: 100%;
+}
+
+.top img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+}
+
+.animal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDCBC;
+    border-radius: 15px;
+    padding: 4px 12px;
+    border: 1px solid #121C2A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.needshelp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDAD6;
+    color: #93000A;
+    gap: 6px;
+    border-radius: 15px;
+    padding: 4px 12px;
+    border: 1px solid #93000A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.needshelp > div {
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6A7874;
+    font-size: 13px;
+}
+
+.location img {
+    width: 16px;
+    height: 16px;
+}
+
+.details {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 8px;
+    color: #121C2A;
+}
+
+.card .description {
+    margin-top: 8px;
+    color: #3D4945;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.buttonwidth {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wanttohelp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #006856;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wanttohelp img {
+    width: 16px;
+    height: 16px;
+}
+
 /* Footer */
 .footer {
     padding: 32px;
     background-color: #FFFFFF;
+    border-top: 1px solid #E5E7EB;
 }
 
 .footer-container {
@@ -366,192 +532,7 @@ body {
     color: #006856;
 }
 
-.action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 190px;
-    height: 22px;
-    background-color: #FFDCBC;
-    border-radius: 15px;
-    padding: 4px 12px;
-    border: 1px solid black;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.action p {
-    font-weight: bold;
-    font-size: 11px;
-}
-
-.animalshelp {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 32px 80px;
-    display: flex;
-    flex-direction: column;
-}
-
-.animalshelp h2 {
-    font-weight: bold;
-    width: 672px;
-    height: 40px;
-    line-height: 40px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 32px;
-    margin-top: 12px;
-}
-
-.animalshelp p {
-    width: 672px;
-    max-width: 100%;
-    min-height: 46px;
-    margin-top: 11px;
-    color: #3D4945;
-    font-size: 14px;
-}
-
-.cards {
-    margin-top: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 462px;
-    width: 384px;
-}
-
-.animal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 47px;
-    height: 22px;
-    background-color: #FFDCBC;
-    border-radius: 15px;
-    padding: 4px 12px;
-    border: 1px solid black;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: bold;
-}
-
-.needshelp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    height: 22px;
-    background-color: #FFDAD6;
-    color: #93000A;
-    gap: 6px;
-    border-radius: 15px;
-    padding: 4px 12px;
-    border: 1px solid black;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: bold;
-}
-
-.align {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    z-index: 1;
-}
-
-.needshelp > div {
-    width: 6px;
-    height: 6px;
-    flex-shrink: 0;
-    background-color: currentColor;
-    border-radius: 50%;
-}
-
-.top img {
-    height: 240px;
-    border-radius: 10px 10px 0 0;
-}
-
-.top {
-    position: relative;
-}
-
-.bottom {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-}
-
-.details {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-.location {
-    align-items:center;
-    display: flex;
-    gap: 2px;
-    color: gray;
-    margin-top: 24px;
-}
-
-.description {
-    width: 318px;
-    margin-top: 12px;
-    color: #3D4945;
-    font-size: 14px;
-}
-
-.wanttohelp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    width: 336px;
-    height: 40px;
-    border: none;
-    background-color: #006856;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: bold;
-    margin-top: 12px;
-    cursor: pointer;
-}
-
-.buttonwidth {
-    display: flex;
-    width: 384px;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-}
-
-.buttonwidth img {
-    width: 16px;
-    height: 16px;
-}
-
-.location img {
-    width: 16px;
-    height: 16px;
-}
-
-.logo img {
-    display: block;
-    width: 120px;
-    height: auto;
-}
-
+/* Responsive Media Query */
 @media (max-width: 900px) {
     .hero-container,
     .footer-container,
@@ -565,6 +546,12 @@ body {
         gap: 24px;
     }
 
+    .hero-image-wrapper {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
     .stats {
         flex-direction: column;
         gap: 20px;
@@ -572,5 +559,11 @@ body {
 
     .cards {
         justify-content: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 16px;
     }
 }
