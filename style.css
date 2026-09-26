@@ -7,6 +7,133 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center, space-between;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    justify-content: center , space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home {
+    font-weight: 700px;
+    color: #006856;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'inter', sans-serif;
+    margin-left: 40px;
+}
+
+.animals {
+    font-weight: 600px;
+    color: #3d4945;
+    font-size: 13px;
+    height: 18px;
+    font-family: 'plus jakarta sans', sans-serif;
+    margin-left: 24px;
+}
+
+.logo {
+    gap: 48px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.navitems {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.report-btn {
+    width: 137px;
+    height: 40px;
+    border-radius: 9999px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: #006856;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    font-family: 'plus jakarta sans', sans-serif;
+    margin-right: 16px;
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-right: 32px;
+    margin-left: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h1 {
+        font-family: 'plus jakarta sans', sans-serif;
+        color: #121c2a;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.45px;
+    }
+}
+
+.foot {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.home2 {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006856;
+}
+
+.animals2 {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #3d4945;
+}
+
+.lastp {
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 15px;
+    height: 18px;
+    color: #3d4945;
+    font-family: 'inter , sans-serif';
+}
+
+
 section {
     background-color: #F8F9FF;
     height: 842px;
